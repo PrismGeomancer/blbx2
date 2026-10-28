@@ -1,0 +1,3760 @@
+{
+  "version": 1,
+  "mode": "archive",
+  "model": "BLACKBOX / INVESTIGATION ENGINE",
+  "now": 1791808800000,
+  "startedAt": 1791549600000,
+  "cycle": 42,
+  "agents": [
+    {
+      "id": "sentinel",
+      "codename": "SENTINEL",
+      "role": "Signal investigator",
+      "mission": "Detects unusual timing, repeated activity, and new questions worth opening.",
+      "tools": [
+        "Signal index",
+        "Launch timelines",
+        "Case intake"
+      ],
+      "status": "searching",
+      "since": 1791808757000,
+      "missionId": "exit-window",
+      "task": "Was liquidity removed before the wider wallet cluster began selling?",
+      "lastThought": "Locate the first independent signal in BB-002: authority snapshot captured.",
+      "lastAction": "Locate the first independent signal in BB-002: authority snapshot captured.",
+      "stats": {
+        "tasks": 8,
+        "records": 128,
+        "searches": 12,
+        "reads": 18,
+        "findings": 2,
+        "tokensIn": 120000,
+        "tokensOut": 4800,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "cryptanalyst",
+      "codename": "CRYPTANALYST",
+      "role": "Pattern analyst",
+      "mission": "Tests whether a pattern survives alternative explanations and baseline comparisons.",
+      "tools": [
+        "Timing analysis",
+        "Route comparison",
+        "Pattern tests"
+      ],
+      "status": "thinking",
+      "since": 1791808714000,
+      "missionId": "exit-window",
+      "task": "Was liquidity removed before the wider wallet cluster began selling?",
+      "lastThought": "The case boundary is 2 withdrawals \u00b7 1 sell window. Establish a clean comparison before testing intent.",
+      "lastAction": "The case boundary is 2 withdrawals \u00b7 1 sell window. Establish a clean comparison before testing intent.",
+      "stats": {
+        "tasks": 9,
+        "records": 140,
+        "searches": 15,
+        "reads": 22,
+        "findings": 2,
+        "tokensIn": 141000,
+        "tokensOut": 5600,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "cartographer",
+      "codename": "CARTOGRAPHER",
+      "role": "Wallet cartographer",
+      "mission": "Builds the funding graph and separates linked aliases from proven common control.",
+      "tools": [
+        "Wallet graph",
+        "Funding paths",
+        "Cluster ledger"
+      ],
+      "status": "reading",
+      "since": 1791808671000,
+      "missionId": "exit-window",
+      "task": "Was liquidity removed before the wider wallet cluster began selling?",
+      "lastThought": "Trace authority record \u2192 liquidity account. Keep uncertain edges outside the confirmed path.",
+      "lastAction": "Trace authority record \u2192 liquidity account. Keep uncertain edges outside the confirmed path.",
+      "stats": {
+        "tasks": 10,
+        "records": 152,
+        "searches": 18,
+        "reads": 26,
+        "findings": 2,
+        "tokensIn": 162000,
+        "tokensOut": 6400,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "forge",
+      "codename": "FORGE",
+      "role": "Program investigator",
+      "mission": "Reconstructs instruction paths, retries, and authority changes across each case.",
+      "tools": [
+        "Program traces",
+        "Instruction decoder",
+        "Route ledger"
+      ],
+      "status": "reading",
+      "since": 1791808628000,
+      "missionId": "exit-window",
+      "task": "Was liquidity removed before the wider wallet cluster began selling?",
+      "lastThought": "The first withdrawal establishes the start of the exit interval.",
+      "lastAction": "The first withdrawal establishes the start of the exit interval.",
+      "stats": {
+        "tasks": 11,
+        "records": 164,
+        "searches": 21,
+        "reads": 30,
+        "findings": 2,
+        "tokensIn": 183000,
+        "tokensOut": 7200,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "architect",
+      "codename": "ARCHITECT",
+      "role": "Response architect",
+      "mission": "Turns findings into the next evidence request and a clear case resolution path.",
+      "tools": [
+        "Case playbooks",
+        "Review queue",
+        "Evidence requests"
+      ],
+      "status": "thinking",
+      "since": 1791808585000,
+      "missionId": "echo-launch",
+      "task": "Why did 23 wallet aliases enter the same launch within an eight-second window?",
+      "lastThought": "Can the common route be explained by a shared funding service?",
+      "lastAction": "Can the common route be explained by a shared funding service?",
+      "stats": {
+        "tasks": 12,
+        "records": 176,
+        "searches": 24,
+        "reads": 34,
+        "findings": 2,
+        "tokensIn": 204000,
+        "tokensOut": 8000,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "prover",
+      "codename": "PROVER",
+      "role": "Evidence auditor",
+      "mission": "Checks each conclusion against its underlying record and preserves the unknowns.",
+      "tools": [
+        "Evidence ledger",
+        "Chain of custody",
+        "Consistency checks"
+      ],
+      "status": "reading",
+      "since": 1791808542000,
+      "missionId": "echo-launch",
+      "task": "Why did 23 wallet aliases enter the same launch within an eight-second window?",
+      "lastThought": "BB-001 review: The funding relationship is supported. Common ownership is not established.",
+      "lastAction": "BB-001 review: The funding relationship is supported. Common ownership is not established.",
+      "stats": {
+        "tasks": 13,
+        "records": 188,
+        "searches": 27,
+        "reads": 38,
+        "findings": 2,
+        "tokensIn": 225000,
+        "tokensOut": 8800,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "qubit",
+      "codename": "QUBIT",
+      "role": "Quantum analyst",
+      "mission": "Explores quantum-inspired search, uncertain paths, and competing explanations.",
+      "tools": [
+        "Reconstruction matrix",
+        "Hypothesis search",
+        "Exposure research"
+      ],
+      "status": "thinking",
+      "since": 1791808499000,
+      "missionId": "echo-launch",
+      "task": "Why did 23 wallet aliases enter the same launch within an eight-second window?",
+      "lastThought": "BB-001 working fit: Coordinated launch at 64%. Fit ranks the explanations; it does not prove the owner.",
+      "lastAction": "BB-001 working fit: Coordinated launch at 64%. Fit ranks the explanations; it does not prove the owner.",
+      "stats": {
+        "tasks": 14,
+        "records": 200,
+        "searches": 30,
+        "reads": 42,
+        "findings": 2,
+        "tokensIn": 246000,
+        "tokensOut": 9600,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "adversary",
+      "codename": "ADVERSARY",
+      "role": "Contradiction hunter",
+      "mission": "Finds the strongest innocent explanation and challenges every ownership claim.",
+      "tools": [
+        "Counterexamples",
+        "Alternative paths",
+        "Attribution review"
+      ],
+      "status": "searching",
+      "since": 1791808456000,
+      "missionId": "echo-launch",
+      "task": "Why did 23 wallet aliases enter the same launch within an eight-second window?",
+      "lastThought": "Challenge BB-001: Explains the common route without requiring a single owner.",
+      "lastAction": "Challenge BB-001: Explains the common route without requiring a single owner.",
+      "stats": {
+        "tasks": 15,
+        "records": 212,
+        "searches": 33,
+        "reads": 46,
+        "findings": 2,
+        "tokensIn": 267000,
+        "tokensOut": 10400,
+        "costUsd": 0
+      }
+    },
+    {
+      "id": "conductor",
+      "codename": "CONDUCTOR",
+      "role": "Bureau coordinator",
+      "mission": "Routes questions, schedules specialists, and maintains one coherent investigation.",
+      "tools": [
+        "Case scheduler",
+        "Review gate",
+        "Resource governor"
+      ],
+      "status": "thinking",
+      "since": 1791808413000,
+      "missionId": "exit-window",
+      "task": "Was liquidity removed before the wider wallet cluster began selling?",
+      "lastThought": "Open BB-002 / The Exit Window. Start with the sequence; keep the owner question separate.",
+      "lastAction": "Open BB-002 / The Exit Window. Start with the sequence; keep the owner question separate.",
+      "stats": {
+        "tasks": 16,
+        "records": 224,
+        "searches": 36,
+        "reads": 50,
+        "findings": 2,
+        "tokensIn": 288000,
+        "tokensOut": 11200,
+        "costUsd": 0
+      }
+    }
+  ],
+  "missions": [
+    {
+      "id": "echo-launch",
+      "title": "The Echo Launch",
+      "question": "Why did 23 wallet aliases enter the same launch within an eight-second window?",
+      "lead": "sentinel",
+      "support": [
+        "cartographer",
+        "adversary"
+      ],
+      "priority": 1,
+      "status": "cooldown",
+      "cycles": 7,
+      "findings": 2,
+      "lastRunAt": 1791808690000,
+      "lastSummary": "A common funding route links 17 aliases. Shared control remains an open question.",
+      "severity": "Elevated",
+      "confidence": 64,
+      "stage": "Reviewed"
+    },
+    {
+      "id": "exit-window",
+      "title": "The Exit Window",
+      "question": "Was liquidity removed before the wider wallet cluster began selling?",
+      "lead": "cryptanalyst",
+      "support": [
+        "forge",
+        "prover"
+      ],
+      "priority": 1,
+      "status": "active",
+      "cycles": 8,
+      "findings": 2,
+      "lastRunAt": 1791808580000,
+      "lastSummary": "Two withdrawal paths precede the sell wave; the order matters more than the headline.",
+      "severity": "High",
+      "confidence": 72,
+      "stage": "Reconstruction"
+    },
+    {
+      "id": "mirror-route",
+      "title": "The Mirror Route",
+      "question": "Are repeated swaps a bot loop, a routing artifact, or coordinated volume?",
+      "lead": "forge",
+      "support": [
+        "qubit",
+        "cryptanalyst"
+      ],
+      "priority": 2,
+      "status": "queued",
+      "cycles": 9,
+      "findings": 2,
+      "lastRunAt": 1791808470000,
+      "lastSummary": "Repeated instruction paths are consistent with one retry loop. Intent is unresolved.",
+      "severity": "Moderate",
+      "confidence": 79,
+      "stage": "Queued"
+    },
+    {
+      "id": "silent-vault",
+      "title": "The Silent Vault",
+      "question": "Where does the trail go after funds cross an intermediate account?",
+      "lead": "cartographer",
+      "support": [
+        "architect",
+        "prover"
+      ],
+      "priority": 2,
+      "status": "queued",
+      "cycles": 10,
+      "findings": 2,
+      "lastRunAt": 1791808360000,
+      "lastSummary": "The second hop splits into three branches. One branch is still unattributed.",
+      "severity": "Elevated",
+      "confidence": 62,
+      "stage": "Queued"
+    },
+    {
+      "id": "ghost-signal",
+      "title": "The Ghost Signal",
+      "question": "Does the apparent insider signal survive a challenge against ordinary arbitrage?",
+      "lead": "adversary",
+      "support": [
+        "sentinel",
+        "qubit"
+      ],
+      "priority": 3,
+      "status": "queued",
+      "cycles": 11,
+      "findings": 2,
+      "lastRunAt": 1791808250000,
+      "lastSummary": "Timing supports two explanations. No ownership claim has cleared review.",
+      "severity": "Moderate",
+      "confidence": 46,
+      "stage": "Queued"
+    },
+    {
+      "id": "last-mile",
+      "title": "The Last Mile",
+      "question": "Which evidence would distinguish a deliberate exit from a failed automation?",
+      "lead": "architect",
+      "support": [
+        "prover",
+        "conductor"
+      ],
+      "priority": 3,
+      "status": "queued",
+      "cycles": 12,
+      "findings": 2,
+      "lastRunAt": 1791808140000,
+      "lastSummary": "Instruction order and authority changes are the decisive evidence, not price alone.",
+      "severity": "High",
+      "confidence": 58,
+      "stage": "Queued"
+    }
+  ],
+  "findings": [
+    {
+      "id": "bb-note-001",
+      "ts": 1791808715000,
+      "missionId": "echo-launch",
+      "agent": "cartographer",
+      "title": "A shared route connects 17 wallet aliases",
+      "summary": "The ECHO case ledger connects 17 of 23 aliases through one intermediate funding route. The remaining six enter the launch window without that same visible path. The graph supports a funding relationship; it does not identify the person behind it.",
+      "confidence": "medium",
+      "verdict": "corrected",
+      "verifierNote": "Shared infrastructure remains a plausible explanation. Keep the cluster provisional.",
+      "sources": [
+        {
+          "title": "BB / ECHO-LAUNCH \u00b7 case ledger",
+          "url": "case:echo-launch"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-002",
+      "ts": 1791808630000,
+      "missionId": "exit-window",
+      "agent": "cryptanalyst",
+      "title": "The withdrawal comes before the sell wave",
+      "summary": "The EXIT timeline places two liquidity withdrawals ahead of the wider selling window. Reverse ordering would support a reactive exit; this ordering leaves pre-positioning as a question worth testing.",
+      "confidence": "medium",
+      "verdict": "confirmed",
+      "verifierNote": "Sequence accepted within the case record. Intent requires independent evidence.",
+      "sources": [
+        {
+          "title": "BB / EXIT-WINDOW \u00b7 case ledger",
+          "url": "case:exit-window"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-003",
+      "ts": 1791808545000,
+      "missionId": "ghost-signal",
+      "agent": "adversary",
+      "title": "The insider explanation is not the only explanation",
+      "summary": "The earliest entries fit both a coordinated launch and an automated arbitrage response. A narrow time window makes the activity unusual, but it does not make one explanation decisive.",
+      "confidence": "low",
+      "verdict": "unverifiable",
+      "verifierNote": "The ownership inference has not cleared review. Preserve both hypotheses.",
+      "sources": [
+        {
+          "title": "BB / GHOST-SIGNAL \u00b7 case ledger",
+          "url": "case:ghost-signal"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-004",
+      "ts": 1791808460000,
+      "missionId": "mirror-route",
+      "agent": "forge",
+      "title": "The swap pattern repeats an instruction path",
+      "summary": "The MIRROR ledger contains repeated route fingerprints with a matching retry boundary. That is consistent with a loop in the execution path. It does not establish deliberate volume inflation.",
+      "confidence": "medium",
+      "verdict": "corrected",
+      "verifierNote": "Replace the manipulation claim with the narrower instruction-pattern observation.",
+      "sources": [
+        {
+          "title": "BB / MIRROR-ROUTE \u00b7 case ledger",
+          "url": "case:mirror-route"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-005",
+      "ts": 1791808375000,
+      "missionId": "silent-vault",
+      "agent": "cartographer",
+      "title": "Three branches leave the intermediate account",
+      "summary": "The VAULT graph splits into three paths after the intermediate account. Two paths return to known case aliases. The third has no supported owner link and remains outside the attributed cluster.",
+      "confidence": "medium",
+      "verdict": "confirmed",
+      "verifierNote": "The unknown branch stays visible. Do not collapse it into the known cluster.",
+      "sources": [
+        {
+          "title": "BB / SILENT-VAULT \u00b7 case ledger",
+          "url": "case:silent-vault"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-006",
+      "ts": 1791808290000,
+      "missionId": "last-mile",
+      "agent": "architect",
+      "title": "Authority history is the next decisive record",
+      "summary": "The LAST MILE case needs the sequence of authority changes and automation triggers. Price movement alone cannot distinguish an intentional exit from a failed execution policy.",
+      "confidence": "medium",
+      "verdict": "confirmed",
+      "verifierNote": "Evidence request approved. Keep motive open until the authority sequence is available.",
+      "sources": [
+        {
+          "title": "BB / LAST-MILE \u00b7 case ledger",
+          "url": "case:last-mile"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-007",
+      "ts": 1791808205000,
+      "missionId": "echo-launch",
+      "agent": "sentinel",
+      "title": "The funding window is wider than the launch window",
+      "summary": "The eight-second entry window is the headline. The earlier funding interval is the stronger investigative lead because it gives the bureau a separate sequence to compare.",
+      "confidence": "medium",
+      "verdict": "confirmed",
+      "verifierNote": "Keep launch timing and funding timing as independent observations.",
+      "sources": [
+        {
+          "title": "BB / ECHO-LAUNCH \u00b7 case ledger",
+          "url": "case:echo-launch"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-008",
+      "ts": 1791808120000,
+      "missionId": "exit-window",
+      "agent": "prover",
+      "title": "Observation and intent require different verdicts",
+      "summary": "The two withdrawal records support a statement about order. They do not support a statement about intent. The case file now separates those claims so later evidence can update each independently.",
+      "confidence": "medium",
+      "verdict": "corrected",
+      "verifierNote": "Attribution language narrowed. The sequence remains in the evidence ledger.",
+      "sources": [
+        {
+          "title": "BB / EXIT-WINDOW \u00b7 case ledger",
+          "url": "case:exit-window"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-009",
+      "ts": 1791808035000,
+      "missionId": "mirror-route",
+      "agent": "qubit",
+      "title": "Three hypotheses survive the first search",
+      "summary": "The reconstruction matrix keeps bot retry, route aggregation, and intentional repetition in play. The retry explanation fits the instruction order best, while the other two need additional assumptions.",
+      "confidence": "medium",
+      "verdict": "confirmed",
+      "verifierNote": "A best fit is a working explanation, not a final attribution.",
+      "sources": [
+        {
+          "title": "BB / MIRROR-ROUTE \u00b7 case ledger",
+          "url": "case:mirror-route"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-010",
+      "ts": 1791807950000,
+      "missionId": "ghost-signal",
+      "agent": "prover",
+      "title": "Confidence falls when service overlap is included",
+      "summary": "Treating a common service as common ownership artificially strengthens the cluster. The revised hypothesis includes service overlap as an independent possibility.",
+      "confidence": "medium",
+      "verdict": "corrected",
+      "verifierNote": "The bureau will not turn infrastructure overlap into a claim about identity.",
+      "sources": [
+        {
+          "title": "BB / GHOST-SIGNAL \u00b7 case ledger",
+          "url": "case:ghost-signal"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-011",
+      "ts": 1791807865000,
+      "missionId": "silent-vault",
+      "agent": "architect",
+      "title": "An unresolved path becomes an evidence request",
+      "summary": "The third funding branch is now a dedicated request rather than an assumed connection. The bureau can progress on the two supported branches without overstating the unknown one.",
+      "confidence": "medium",
+      "verdict": "confirmed",
+      "verifierNote": "Scope accepted. The unresolved branch stays on the case board.",
+      "sources": [
+        {
+          "title": "BB / SILENT-VAULT \u00b7 case ledger",
+          "url": "case:silent-vault"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    },
+    {
+      "id": "bb-note-012",
+      "ts": 1791807780000,
+      "missionId": "last-mile",
+      "agent": "conductor",
+      "title": "A case can stay open without losing its shape",
+      "summary": "The record preserves the observed sequence, the explanations still in play, and the exact evidence needed next. An unresolved verdict is useful when its boundaries are clear.",
+      "confidence": "medium",
+      "verdict": "confirmed",
+      "verifierNote": "Case protocol accepted: evidence, explanation, challenge, next question.",
+      "sources": [
+        {
+          "title": "BB / LAST-MILE \u00b7 case ledger",
+          "url": "case:last-mile"
+        },
+        {
+          "title": "Bureau attribution protocol",
+          "url": "protocol:attribution"
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "agent": "conductor",
+      "kind": "handoff",
+      "text": "Open BB-001 / The Echo Launch. Start with the sequence; keep the owner question separate.",
+      "missionId": "echo-launch",
+      "phase": "Tracing",
+      "delayMs": 11000,
+      "target": "sentinel",
+      "missionUpdate": {
+        "stage": "Tracing",
+        "status": "active",
+        "lastSummary": "Open BB-001 / The Echo Launch. Start with the sequence; keep the owner question separate."
+      },
+      "id": 1000,
+      "ts": 1791808566000,
+      "replay": true
+    },
+    {
+      "agent": "sentinel",
+      "kind": "thinking",
+      "text": "The case boundary is 23 wallet aliases \u00b7 8-second entry window. Establish a clean comparison before testing intent.",
+      "missionId": "echo-launch",
+      "phase": "Tracing",
+      "delayMs": 13000,
+      "id": 1001,
+      "ts": 1791808579000,
+      "replay": true
+    },
+    {
+      "agent": "sentinel",
+      "kind": "search",
+      "text": "Locate the first independent signal in BB-001: a funding route appears.",
+      "missionId": "echo-launch",
+      "phase": "Tracing",
+      "delayMs": 15000,
+      "target": "Case archive",
+      "id": 1002,
+      "ts": 1791808592000,
+      "replay": true
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "One intermediate route supplies 17 aliases before the launch window.",
+      "missionId": "echo-launch",
+      "phase": "Tracing",
+      "delayMs": 17000,
+      "target": "Evidence ledger",
+      "id": 1003,
+      "ts": 1791808605000,
+      "replay": true
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "Trace funding source \u2192 intermediate route. Keep uncertain edges outside the confirmed path.",
+      "missionId": "echo-launch",
+      "phase": "Reconstruction",
+      "delayMs": 11000,
+      "target": "Wallet graph",
+      "missionUpdate": {
+        "stage": "Reconstruction",
+        "status": "active",
+        "lastSummary": "Trace funding source \u2192 intermediate route. Keep uncertain edges outside the confirmed path."
+      },
+      "id": 1004,
+      "ts": 1791808618000,
+      "replay": true
+    },
+    {
+      "agent": "forge",
+      "kind": "thinking",
+      "text": "The first entry establishes the reference point for the timing ledger.",
+      "missionId": "echo-launch",
+      "phase": "Reconstruction",
+      "delayMs": 13000,
+      "id": 1005,
+      "ts": 1791808631000,
+      "replay": true
+    },
+    {
+      "agent": "qubit",
+      "kind": "thinking",
+      "text": "Compare coordinated launch against shared funding service in BB-001.",
+      "missionId": "echo-launch",
+      "phase": "Reconstruction",
+      "delayMs": 15000,
+      "id": 1006,
+      "ts": 1791808644000,
+      "replay": true
+    },
+    {
+      "agent": "prover",
+      "kind": "result",
+      "text": "Seventeen aliases share one intermediate route.",
+      "missionId": "echo-launch",
+      "phase": "Reconstruction",
+      "delayMs": 17000,
+      "id": 1007,
+      "ts": 1791808657000,
+      "replay": true
+    },
+    {
+      "agent": "adversary",
+      "kind": "thinking",
+      "text": "Challenge BB-001: Explains the common route without requiring a single owner.",
+      "missionId": "echo-launch",
+      "phase": "Review",
+      "delayMs": 11000,
+      "missionUpdate": {
+        "stage": "Review",
+        "status": "verifying",
+        "lastSummary": "Challenge BB-001: Explains the common route without requiring a single owner."
+      },
+      "id": 1008,
+      "ts": 1791808670000,
+      "replay": true
+    },
+    {
+      "agent": "qubit",
+      "kind": "result",
+      "text": "BB-001 working fit: Coordinated launch at 64%. Fit ranks the explanations; it does not prove the owner.",
+      "missionId": "echo-launch",
+      "phase": "Review",
+      "delayMs": 13000,
+      "id": 1009,
+      "ts": 1791808683000,
+      "replay": true
+    },
+    {
+      "agent": "architect",
+      "kind": "draft",
+      "text": "Can the common route be explained by a shared funding service?",
+      "missionId": "echo-launch",
+      "phase": "Review",
+      "delayMs": 15000,
+      "id": 1010,
+      "ts": 1791808696000,
+      "replay": true
+    },
+    {
+      "agent": "prover",
+      "kind": "verdict",
+      "text": "BB-001 review: The funding relationship is supported. Common ownership is not established.",
+      "missionId": "echo-launch",
+      "phase": "Review",
+      "delayMs": 17000,
+      "target": "sentinel",
+      "verdict": "corrected",
+      "detail": "The funding relationship is supported. Common ownership is not established.",
+      "missionUpdate": {
+        "stage": "Reviewed",
+        "status": "cooldown",
+        "lastSummary": "The funding relationship is supported. Common ownership is not established.",
+        "confidence": 64
+      },
+      "id": 1011,
+      "ts": 1791808709000,
+      "replay": true
+    },
+    {
+      "agent": "conductor",
+      "kind": "handoff",
+      "text": "Open BB-002 / The Exit Window. Start with the sequence; keep the owner question separate.",
+      "missionId": "exit-window",
+      "phase": "Tracing",
+      "delayMs": 11000,
+      "target": "cryptanalyst",
+      "missionUpdate": {
+        "stage": "Tracing",
+        "status": "active",
+        "lastSummary": "Open BB-002 / The Exit Window. Start with the sequence; keep the owner question separate."
+      },
+      "id": 1012,
+      "ts": 1791808722000,
+      "replay": true
+    },
+    {
+      "agent": "cryptanalyst",
+      "kind": "thinking",
+      "text": "The case boundary is 2 withdrawals \u00b7 1 sell window. Establish a clean comparison before testing intent.",
+      "missionId": "exit-window",
+      "phase": "Tracing",
+      "delayMs": 13000,
+      "id": 1013,
+      "ts": 1791808735000,
+      "replay": true
+    },
+    {
+      "agent": "sentinel",
+      "kind": "search",
+      "text": "Locate the first independent signal in BB-002: authority snapshot captured.",
+      "missionId": "exit-window",
+      "phase": "Tracing",
+      "delayMs": 15000,
+      "target": "Case archive",
+      "id": 1014,
+      "ts": 1791808748000,
+      "replay": true
+    },
+    {
+      "agent": "forge",
+      "kind": "fetch",
+      "text": "The case records the configuration before liquidity changes.",
+      "missionId": "exit-window",
+      "phase": "Tracing",
+      "delayMs": 17000,
+      "target": "Evidence ledger",
+      "id": 1015,
+      "ts": 1791808761000,
+      "replay": true
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "Trace authority record \u2192 liquidity account. Keep uncertain edges outside the confirmed path.",
+      "missionId": "exit-window",
+      "phase": "Reconstruction",
+      "delayMs": 11000,
+      "target": "Wallet graph",
+      "missionUpdate": {
+        "stage": "Reconstruction",
+        "status": "active",
+        "lastSummary": "Trace authority record \u2192 liquidity account. Keep uncertain edges outside the confirmed path."
+      },
+      "id": 1016,
+      "ts": 1791808774000,
+      "replay": true
+    },
+    {
+      "agent": "forge",
+      "kind": "thinking",
+      "text": "The first withdrawal establishes the start of the exit interval.",
+      "missionId": "exit-window",
+      "phase": "Reconstruction",
+      "delayMs": 13000,
+      "id": 1017,
+      "ts": 1791808787000,
+      "replay": true
+    }
+  ],
+  "activitySequence": [
+    {
+      "agent": "qubit",
+      "kind": "thinking",
+      "text": "Compare pre-positioned exit against automation trigger in BB-002.",
+      "missionId": "exit-window",
+      "phase": "Reconstruction",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "result",
+      "text": "Two paths precede the broader selling interval.",
+      "missionId": "exit-window",
+      "phase": "Reconstruction",
+      "delayMs": 17000
+    },
+    {
+      "agent": "adversary",
+      "kind": "thinking",
+      "text": "Challenge BB-002: Could produce the same order if a threshold rule fired first.",
+      "missionId": "exit-window",
+      "phase": "Review",
+      "delayMs": 11000,
+      "missionUpdate": {
+        "stage": "Review",
+        "status": "verifying",
+        "lastSummary": "Challenge BB-002: Could produce the same order if a threshold rule fired first."
+      }
+    },
+    {
+      "agent": "qubit",
+      "kind": "result",
+      "text": "BB-002 working fit: Pre-positioned exit at 72%. Fit ranks the explanations; it does not prove the owner.",
+      "missionId": "exit-window",
+      "phase": "Review",
+      "delayMs": 13000
+    },
+    {
+      "agent": "architect",
+      "kind": "draft",
+      "text": "Do authority changes show a planned exit or an automated trigger?",
+      "missionId": "exit-window",
+      "phase": "Review",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "verdict",
+      "text": "BB-002 review: Withdrawal order is supported. The motive behind the exit remains open.",
+      "missionId": "exit-window",
+      "phase": "Review",
+      "delayMs": 17000,
+      "target": "cryptanalyst",
+      "verdict": "confirmed",
+      "detail": "Withdrawal order is supported. The motive behind the exit remains open.",
+      "missionUpdate": {
+        "stage": "Reviewed",
+        "status": "cooldown",
+        "lastSummary": "Withdrawal order is supported. The motive behind the exit remains open.",
+        "confidence": 72
+      }
+    },
+    {
+      "agent": "conductor",
+      "kind": "handoff",
+      "text": "Open BB-003 / The Mirror Route. Start with the sequence; keep the owner question separate.",
+      "missionId": "mirror-route",
+      "phase": "Tracing",
+      "delayMs": 11000,
+      "target": "forge",
+      "missionUpdate": {
+        "stage": "Tracing",
+        "status": "active",
+        "lastSummary": "Open BB-003 / The Mirror Route. Start with the sequence; keep the owner question separate."
+      }
+    },
+    {
+      "agent": "forge",
+      "kind": "thinking",
+      "text": "The case boundary is 3 explanations \u00b7 repeated route fingerprint. Establish a clean comparison before testing intent.",
+      "missionId": "mirror-route",
+      "phase": "Tracing",
+      "delayMs": 13000
+    },
+    {
+      "agent": "sentinel",
+      "kind": "search",
+      "text": "Locate the first independent signal in BB-003: route fingerprint captured.",
+      "missionId": "mirror-route",
+      "phase": "Tracing",
+      "delayMs": 15000,
+      "target": "Case archive"
+    },
+    {
+      "agent": "forge",
+      "kind": "fetch",
+      "text": "The same sequence of instructions becomes the comparison baseline.",
+      "missionId": "mirror-route",
+      "phase": "Tracing",
+      "delayMs": 17000,
+      "target": "Evidence ledger"
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "Trace execution policy \u2192 route fingerprint. Keep uncertain edges outside the confirmed path.",
+      "missionId": "mirror-route",
+      "phase": "Reconstruction",
+      "delayMs": 11000,
+      "target": "Wallet graph",
+      "missionUpdate": {
+        "stage": "Reconstruction",
+        "status": "active",
+        "lastSummary": "Trace execution policy \u2192 route fingerprint. Keep uncertain edges outside the confirmed path."
+      }
+    },
+    {
+      "agent": "forge",
+      "kind": "thinking",
+      "text": "Matching boundaries suggest a repeated execution path.",
+      "missionId": "mirror-route",
+      "phase": "Reconstruction",
+      "delayMs": 13000
+    },
+    {
+      "agent": "qubit",
+      "kind": "thinking",
+      "text": "Compare bot retry loop against route aggregation in BB-003.",
+      "missionId": "mirror-route",
+      "phase": "Reconstruction",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "result",
+      "text": "Repeated route records share the same execution boundary.",
+      "missionId": "mirror-route",
+      "phase": "Reconstruction",
+      "delayMs": 17000
+    },
+    {
+      "agent": "adversary",
+      "kind": "thinking",
+      "text": "Challenge BB-003: Could repeat part of the route while serving independent requests.",
+      "missionId": "mirror-route",
+      "phase": "Review",
+      "delayMs": 11000,
+      "missionUpdate": {
+        "stage": "Review",
+        "status": "verifying",
+        "lastSummary": "Challenge BB-003: Could repeat part of the route while serving independent requests."
+      }
+    },
+    {
+      "agent": "qubit",
+      "kind": "result",
+      "text": "BB-003 working fit: Bot retry loop at 79%. Fit ranks the explanations; it does not prove the owner.",
+      "missionId": "mirror-route",
+      "phase": "Review",
+      "delayMs": 13000
+    },
+    {
+      "agent": "architect",
+      "kind": "draft",
+      "text": "Does the retry condition reproduce the repeated path without extra assumptions?",
+      "missionId": "mirror-route",
+      "phase": "Review",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "verdict",
+      "text": "BB-003 review: A retry loop currently fits the instruction sequence best. Intent is unresolved.",
+      "missionId": "mirror-route",
+      "phase": "Review",
+      "delayMs": 17000,
+      "target": "forge",
+      "verdict": "corrected",
+      "detail": "A retry loop currently fits the instruction sequence best. Intent is unresolved.",
+      "missionUpdate": {
+        "stage": "Reviewed",
+        "status": "cooldown",
+        "lastSummary": "A retry loop currently fits the instruction sequence best. Intent is unresolved.",
+        "confidence": 79
+      }
+    },
+    {
+      "agent": "conductor",
+      "kind": "handoff",
+      "text": "Open BB-004 / The Silent Vault. Start with the sequence; keep the owner question separate.",
+      "missionId": "silent-vault",
+      "phase": "Tracing",
+      "delayMs": 11000,
+      "target": "cartographer",
+      "missionUpdate": {
+        "stage": "Tracing",
+        "status": "active",
+        "lastSummary": "Open BB-004 / The Silent Vault. Start with the sequence; keep the owner question separate."
+      }
+    },
+    {
+      "agent": "cartographer",
+      "kind": "thinking",
+      "text": "The case boundary is 3 funding branches \u00b7 1 unresolved path. Establish a clean comparison before testing intent.",
+      "missionId": "silent-vault",
+      "phase": "Tracing",
+      "delayMs": 13000
+    },
+    {
+      "agent": "sentinel",
+      "kind": "search",
+      "text": "Locate the first independent signal in BB-004: intermediate account identified.",
+      "missionId": "silent-vault",
+      "phase": "Tracing",
+      "delayMs": 15000,
+      "target": "Case archive"
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "The graph anchors on the account where the trail splits.",
+      "missionId": "silent-vault",
+      "phase": "Tracing",
+      "delayMs": 17000,
+      "target": "Evidence ledger"
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "Trace origin alias \u2192 intermediate account. Keep uncertain edges outside the confirmed path.",
+      "missionId": "silent-vault",
+      "phase": "Reconstruction",
+      "delayMs": 11000,
+      "target": "Wallet graph",
+      "missionUpdate": {
+        "stage": "Reconstruction",
+        "status": "active",
+        "lastSummary": "Trace origin alias \u2192 intermediate account. Keep uncertain edges outside the confirmed path."
+      }
+    },
+    {
+      "agent": "forge",
+      "kind": "thinking",
+      "text": "The outgoing paths are recorded independently.",
+      "missionId": "silent-vault",
+      "phase": "Reconstruction",
+      "delayMs": 13000
+    },
+    {
+      "agent": "qubit",
+      "kind": "thinking",
+      "text": "Compare common routing infrastructure against controlled fan-out in BB-004.",
+      "missionId": "silent-vault",
+      "phase": "Reconstruction",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "result",
+      "text": "The intermediate account sends the trail into three distinct paths.",
+      "missionId": "silent-vault",
+      "phase": "Reconstruction",
+      "delayMs": 17000
+    },
+    {
+      "agent": "adversary",
+      "kind": "thinking",
+      "text": "Challenge BB-004: Would require a separate control link for the unresolved branch.",
+      "missionId": "silent-vault",
+      "phase": "Review",
+      "delayMs": 11000,
+      "missionUpdate": {
+        "stage": "Review",
+        "status": "verifying",
+        "lastSummary": "Challenge BB-004: Would require a separate control link for the unresolved branch."
+      }
+    },
+    {
+      "agent": "qubit",
+      "kind": "result",
+      "text": "BB-004 working fit: Common routing infrastructure at 62%. Fit ranks the explanations; it does not prove the owner.",
+      "missionId": "silent-vault",
+      "phase": "Review",
+      "delayMs": 13000
+    },
+    {
+      "agent": "architect",
+      "kind": "draft",
+      "text": "Can the third branch be connected through evidence independent of timing?",
+      "missionId": "silent-vault",
+      "phase": "Review",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "verdict",
+      "text": "BB-004 review: Two branches have case links. The third remains outside the attributed cluster.",
+      "missionId": "silent-vault",
+      "phase": "Review",
+      "delayMs": 17000,
+      "target": "cartographer",
+      "verdict": "confirmed",
+      "detail": "Two branches have case links. The third remains outside the attributed cluster.",
+      "missionUpdate": {
+        "stage": "Reviewed",
+        "status": "cooldown",
+        "lastSummary": "Two branches have case links. The third remains outside the attributed cluster.",
+        "confidence": 62
+      }
+    },
+    {
+      "agent": "conductor",
+      "kind": "handoff",
+      "text": "Open BB-005 / The Ghost Signal. Start with the sequence; keep the owner question separate.",
+      "missionId": "ghost-signal",
+      "phase": "Tracing",
+      "delayMs": 11000,
+      "target": "adversary",
+      "missionUpdate": {
+        "stage": "Tracing",
+        "status": "active",
+        "lastSummary": "Open BB-005 / The Ghost Signal. Start with the sequence; keep the owner question separate."
+      }
+    },
+    {
+      "agent": "adversary",
+      "kind": "thinking",
+      "text": "The case boundary is 2 surviving explanations \u00b7 attribution withheld. Establish a clean comparison before testing intent.",
+      "missionId": "ghost-signal",
+      "phase": "Tracing",
+      "delayMs": 13000
+    },
+    {
+      "agent": "sentinel",
+      "kind": "search",
+      "text": "Locate the first independent signal in BB-005: public signal appears.",
+      "missionId": "ghost-signal",
+      "phase": "Tracing",
+      "delayMs": 15000,
+      "target": "Case archive"
+    },
+    {
+      "agent": "sentinel",
+      "kind": "fetch",
+      "text": "The ledger records the signal available before the earliest entries.",
+      "missionId": "ghost-signal",
+      "phase": "Tracing",
+      "delayMs": 17000,
+      "target": "Evidence ledger"
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "Trace public signal \u2192 early alias a. Keep uncertain edges outside the confirmed path.",
+      "missionId": "ghost-signal",
+      "phase": "Reconstruction",
+      "delayMs": 11000,
+      "target": "Wallet graph",
+      "missionUpdate": {
+        "stage": "Reconstruction",
+        "status": "active",
+        "lastSummary": "Trace public signal \u2192 early alias a. Keep uncertain edges outside the confirmed path."
+      }
+    },
+    {
+      "agent": "forge",
+      "kind": "thinking",
+      "text": "The timing becomes the starting point for the insider hypothesis.",
+      "missionId": "ghost-signal",
+      "phase": "Reconstruction",
+      "delayMs": 13000
+    },
+    {
+      "agent": "qubit",
+      "kind": "thinking",
+      "text": "Compare public arbitrage response against private coordination in BB-005.",
+      "missionId": "ghost-signal",
+      "phase": "Reconstruction",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "result",
+      "text": "A subset of aliases enters before the wider window.",
+      "missionId": "ghost-signal",
+      "phase": "Reconstruction",
+      "delayMs": 17000
+    },
+    {
+      "agent": "adversary",
+      "kind": "thinking",
+      "text": "Challenge BB-005: Needs an independent communication or control connection.",
+      "missionId": "ghost-signal",
+      "phase": "Review",
+      "delayMs": 11000,
+      "missionUpdate": {
+        "stage": "Review",
+        "status": "verifying",
+        "lastSummary": "Challenge BB-005: Needs an independent communication or control connection."
+      }
+    },
+    {
+      "agent": "qubit",
+      "kind": "result",
+      "text": "BB-005 working fit: Public arbitrage response at 61%. Fit ranks the explanations; it does not prove the owner.",
+      "missionId": "ghost-signal",
+      "phase": "Review",
+      "delayMs": 13000
+    },
+    {
+      "agent": "architect",
+      "kind": "draft",
+      "text": "Does the signal remain unusual when public arbitrage conditions are included?",
+      "missionId": "ghost-signal",
+      "phase": "Review",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "verdict",
+      "text": "BB-005 review: The early-entry pattern fits both coordination and ordinary arbitrage.",
+      "missionId": "ghost-signal",
+      "phase": "Review",
+      "delayMs": 17000,
+      "target": "adversary",
+      "verdict": "unverifiable",
+      "detail": "The early-entry pattern fits both coordination and ordinary arbitrage.",
+      "missionUpdate": {
+        "stage": "Reviewed",
+        "status": "cooldown",
+        "lastSummary": "The early-entry pattern fits both coordination and ordinary arbitrage.",
+        "confidence": 46
+      }
+    },
+    {
+      "agent": "conductor",
+      "kind": "handoff",
+      "text": "Open BB-006 / The Last Mile. Start with the sequence; keep the owner question separate.",
+      "missionId": "last-mile",
+      "phase": "Tracing",
+      "delayMs": 11000,
+      "target": "architect",
+      "missionUpdate": {
+        "stage": "Tracing",
+        "status": "active",
+        "lastSummary": "Open BB-006 / The Last Mile. Start with the sequence; keep the owner question separate."
+      }
+    },
+    {
+      "agent": "architect",
+      "kind": "thinking",
+      "text": "The case boundary is authority history \u00b7 execution policy. Establish a clean comparison before testing intent.",
+      "missionId": "last-mile",
+      "phase": "Tracing",
+      "delayMs": 13000
+    },
+    {
+      "agent": "sentinel",
+      "kind": "search",
+      "text": "Locate the first independent signal in BB-006: policy baseline recorded.",
+      "missionId": "last-mile",
+      "phase": "Tracing",
+      "delayMs": 15000,
+      "target": "Case archive"
+    },
+    {
+      "agent": "architect",
+      "kind": "fetch",
+      "text": "The case preserves the expected automation behavior.",
+      "missionId": "last-mile",
+      "phase": "Tracing",
+      "delayMs": 17000,
+      "target": "Evidence ledger"
+    },
+    {
+      "agent": "cartographer",
+      "kind": "fetch",
+      "text": "Trace policy baseline \u2192 authority history. Keep uncertain edges outside the confirmed path.",
+      "missionId": "last-mile",
+      "phase": "Reconstruction",
+      "delayMs": 11000,
+      "target": "Wallet graph",
+      "missionUpdate": {
+        "stage": "Reconstruction",
+        "status": "active",
+        "lastSummary": "Trace policy baseline \u2192 authority history. Keep uncertain edges outside the confirmed path."
+      }
+    },
+    {
+      "agent": "forge",
+      "kind": "thinking",
+      "text": "The observed sequence departs from the expected policy.",
+      "missionId": "last-mile",
+      "phase": "Reconstruction",
+      "delayMs": 13000
+    },
+    {
+      "agent": "qubit",
+      "kind": "thinking",
+      "text": "Compare failed automation against deliberate policy change in BB-006.",
+      "missionId": "last-mile",
+      "phase": "Reconstruction",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "result",
+      "text": "The final path differs from the policy baseline in the case record.",
+      "missionId": "last-mile",
+      "phase": "Reconstruction",
+      "delayMs": 17000
+    },
+    {
+      "agent": "adversary",
+      "kind": "thinking",
+      "text": "Challenge BB-006: Requires a preceding authority or configuration change.",
+      "missionId": "last-mile",
+      "phase": "Review",
+      "delayMs": 11000,
+      "missionUpdate": {
+        "stage": "Review",
+        "status": "verifying",
+        "lastSummary": "Challenge BB-006: Requires a preceding authority or configuration change."
+      }
+    },
+    {
+      "agent": "qubit",
+      "kind": "result",
+      "text": "BB-006 working fit: Failed automation at 58%. Fit ranks the explanations; it does not prove the owner.",
+      "missionId": "last-mile",
+      "phase": "Review",
+      "delayMs": 13000
+    },
+    {
+      "agent": "architect",
+      "kind": "draft",
+      "text": "Which authority change, if any, preceded the final execution trigger?",
+      "missionId": "last-mile",
+      "phase": "Review",
+      "delayMs": 15000
+    },
+    {
+      "agent": "prover",
+      "kind": "verdict",
+      "text": "BB-006 review: The case cannot distinguish a deliberate exit from failed automation yet.",
+      "missionId": "last-mile",
+      "phase": "Review",
+      "delayMs": 17000,
+      "target": "architect",
+      "verdict": "confirmed",
+      "detail": "The case cannot distinguish a deliberate exit from failed automation yet.",
+      "missionUpdate": {
+        "stage": "Reviewed",
+        "status": "cooldown",
+        "lastSummary": "The case cannot distinguish a deliberate exit from failed automation yet.",
+        "confidence": 58
+      }
+    }
+  ],
+  "fuel": {
+    "chain": "solana",
+    "launchpad": null,
+    "mint": null,
+    "creatorWallet": null,
+    "solPriceUsd": null,
+    "unclaimedSol": 0,
+    "claimedSolTotal": 0,
+    "creditedUsdTotal": 0,
+    "spentUsdTotal": 0,
+    "fuelUsd": 84,
+    "burnUsdPerHour": 0,
+    "runwayHours": null,
+    "lastClaimAt": null,
+    "lastClaimTx": null,
+    "health": "running",
+    "rates": {
+      "model": "BLACKBOX",
+      "inputPerMTok": 0,
+      "outputPerMTok": 0,
+      "cacheReadPerMTok": 0
+    }
+  },
+  "totals": {
+    "cases": 6,
+    "cycles": 42,
+    "searches": 128,
+    "reads": 164,
+    "drafts": 18,
+    "published": 12,
+    "refuted": 4,
+    "tokensIn": 0,
+    "tokensOut": 0,
+    "costUsd": 0
+  },
+  "token": {
+    "ca": null,
+    "symbol": "BLACKBOX",
+    "name": "BLACKBOX"
+  },
+  "quantum": {
+    "provider": "BLACKBOX / Q-LAB",
+    "updatedAt": 1791808800000,
+    "budget": {
+      "plan": "bureau",
+      "allowanceSec": 600,
+      "windowDays": 7,
+      "usedSec": 141,
+      "remainingSec": 459,
+      "reserveSec": 120,
+      "dailyCapSec": 85,
+      "usedTodaySec": 38,
+      "heldTodaySec": 0
+    },
+    "backends": [
+      {
+        "name": "echo_matrix",
+        "qubits": 156,
+        "processor": "Path search",
+        "operational": true,
+        "pendingJobs": 3,
+        "twoQubitError": 0.06,
+        "readoutError": 0.02,
+        "t1Us": 0,
+        "t2Us": 0
+      },
+      {
+        "name": "route_matrix",
+        "qubits": 96,
+        "processor": "Route fit",
+        "operational": true,
+        "pendingJobs": 4,
+        "twoQubitError": 0.08499999999999999,
+        "readoutError": 0.02,
+        "t1Us": 0,
+        "t2Us": 0
+      },
+      {
+        "name": "vault_matrix",
+        "qubits": 64,
+        "processor": "Cluster fit",
+        "operational": true,
+        "pendingJobs": 5,
+        "twoQubitError": 0.11,
+        "readoutError": 0.02,
+        "t1Us": 0,
+        "t2Us": 0
+      }
+    ],
+    "lattice": {
+      "backend": "echo_matrix",
+      "coords": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ],
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          14
+        ],
+        [
+          0,
+          15
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          8,
+          13
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          9,
+          3
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          10,
+          15
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          12,
+          9
+        ],
+        [
+          12,
+          10
+        ],
+        [
+          12,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          13,
+          11
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ],
+        [
+          14,
+          10
+        ],
+        [
+          14,
+          11
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          14,
+          15
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          17
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          16,
+          23
+        ],
+        [
+          17,
+          27
+        ],
+        [
+          18,
+          31
+        ],
+        [
+          19,
+          35
+        ],
+        [
+          20,
+          21
+        ],
+        [
+          21,
+          22
+        ],
+        [
+          21,
+          36
+        ],
+        [
+          22,
+          23
+        ],
+        [
+          23,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          25,
+          37
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          27,
+          28
+        ],
+        [
+          28,
+          29
+        ],
+        [
+          29,
+          30
+        ],
+        [
+          29,
+          38
+        ],
+        [
+          30,
+          31
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          32,
+          33
+        ],
+        [
+          33,
+          34
+        ],
+        [
+          33,
+          39
+        ],
+        [
+          34,
+          35
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          37,
+          45
+        ],
+        [
+          38,
+          49
+        ],
+        [
+          39,
+          53
+        ],
+        [
+          40,
+          41
+        ],
+        [
+          41,
+          42
+        ],
+        [
+          42,
+          43
+        ],
+        [
+          43,
+          44
+        ],
+        [
+          43,
+          56
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          45,
+          46
+        ],
+        [
+          46,
+          47
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          47,
+          57
+        ],
+        [
+          48,
+          49
+        ],
+        [
+          49,
+          50
+        ],
+        [
+          50,
+          51
+        ],
+        [
+          51,
+          52
+        ],
+        [
+          51,
+          58
+        ],
+        [
+          52,
+          53
+        ],
+        [
+          53,
+          54
+        ],
+        [
+          54,
+          55
+        ],
+        [
+          55,
+          59
+        ],
+        [
+          56,
+          63
+        ],
+        [
+          57,
+          67
+        ],
+        [
+          58,
+          71
+        ],
+        [
+          59,
+          75
+        ],
+        [
+          60,
+          61
+        ],
+        [
+          61,
+          62
+        ],
+        [
+          61,
+          76
+        ],
+        [
+          62,
+          63
+        ],
+        [
+          63,
+          64
+        ],
+        [
+          64,
+          65
+        ],
+        [
+          65,
+          66
+        ],
+        [
+          65,
+          77
+        ],
+        [
+          66,
+          67
+        ],
+        [
+          67,
+          68
+        ],
+        [
+          68,
+          69
+        ],
+        [
+          69,
+          70
+        ],
+        [
+          69,
+          78
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          71,
+          72
+        ],
+        [
+          72,
+          73
+        ],
+        [
+          73,
+          74
+        ],
+        [
+          73,
+          79
+        ],
+        [
+          74,
+          75
+        ],
+        [
+          76,
+          81
+        ],
+        [
+          77,
+          85
+        ],
+        [
+          78,
+          89
+        ],
+        [
+          79,
+          93
+        ],
+        [
+          80,
+          81
+        ],
+        [
+          81,
+          82
+        ],
+        [
+          82,
+          83
+        ],
+        [
+          83,
+          84
+        ],
+        [
+          83,
+          96
+        ],
+        [
+          84,
+          85
+        ],
+        [
+          85,
+          86
+        ],
+        [
+          86,
+          87
+        ],
+        [
+          87,
+          88
+        ],
+        [
+          87,
+          97
+        ],
+        [
+          88,
+          89
+        ],
+        [
+          89,
+          90
+        ],
+        [
+          90,
+          91
+        ],
+        [
+          91,
+          92
+        ],
+        [
+          91,
+          98
+        ],
+        [
+          92,
+          93
+        ],
+        [
+          93,
+          94
+        ],
+        [
+          94,
+          95
+        ],
+        [
+          95,
+          99
+        ],
+        [
+          96,
+          103
+        ],
+        [
+          97,
+          107
+        ],
+        [
+          98,
+          111
+        ],
+        [
+          99,
+          115
+        ],
+        [
+          100,
+          101
+        ],
+        [
+          101,
+          102
+        ],
+        [
+          101,
+          116
+        ],
+        [
+          102,
+          103
+        ],
+        [
+          103,
+          104
+        ],
+        [
+          104,
+          105
+        ],
+        [
+          105,
+          106
+        ],
+        [
+          105,
+          117
+        ],
+        [
+          106,
+          107
+        ],
+        [
+          107,
+          108
+        ],
+        [
+          108,
+          109
+        ],
+        [
+          109,
+          110
+        ],
+        [
+          109,
+          118
+        ],
+        [
+          110,
+          111
+        ],
+        [
+          111,
+          112
+        ],
+        [
+          112,
+          113
+        ],
+        [
+          113,
+          114
+        ],
+        [
+          113,
+          119
+        ],
+        [
+          114,
+          115
+        ],
+        [
+          116,
+          121
+        ],
+        [
+          117,
+          125
+        ],
+        [
+          118,
+          129
+        ],
+        [
+          119,
+          133
+        ],
+        [
+          120,
+          121
+        ],
+        [
+          121,
+          122
+        ],
+        [
+          122,
+          123
+        ],
+        [
+          123,
+          124
+        ],
+        [
+          123,
+          136
+        ],
+        [
+          124,
+          125
+        ],
+        [
+          125,
+          126
+        ],
+        [
+          126,
+          127
+        ],
+        [
+          127,
+          128
+        ],
+        [
+          127,
+          137
+        ],
+        [
+          128,
+          129
+        ],
+        [
+          129,
+          130
+        ],
+        [
+          130,
+          131
+        ],
+        [
+          131,
+          132
+        ],
+        [
+          131,
+          138
+        ],
+        [
+          132,
+          133
+        ],
+        [
+          133,
+          134
+        ],
+        [
+          134,
+          135
+        ],
+        [
+          135,
+          139
+        ],
+        [
+          136,
+          143
+        ],
+        [
+          137,
+          147
+        ],
+        [
+          138,
+          151
+        ],
+        [
+          139,
+          155
+        ],
+        [
+          140,
+          141
+        ],
+        [
+          141,
+          142
+        ],
+        [
+          142,
+          143
+        ],
+        [
+          143,
+          144
+        ],
+        [
+          144,
+          145
+        ],
+        [
+          145,
+          146
+        ],
+        [
+          146,
+          147
+        ],
+        [
+          147,
+          148
+        ],
+        [
+          148,
+          149
+        ],
+        [
+          149,
+          150
+        ],
+        [
+          150,
+          151
+        ],
+        [
+          151,
+          152
+        ],
+        [
+          152,
+          153
+        ],
+        [
+          153,
+          154
+        ],
+        [
+          154,
+          155
+        ]
+      ]
+    },
+    "jobs": [
+      {
+        "id": "bb-reconstruction-001",
+        "backend": "echo_matrix",
+        "agent": "qubit",
+        "missionId": "echo-launch",
+        "title": "ECHO / competing funding paths",
+        "qubits": 8,
+        "layout": [
+          39,
+          52,
+          54,
+          53,
+          65,
+          66,
+          67,
+          78
+        ],
+        "depth": 128,
+        "twoQubitGates": 24,
+        "shots": 2048,
+        "status": "done",
+        "quantumSec": 12,
+        "submittedAt": 1791808560000,
+        "finishedAt": 1791808572000,
+        "top": [
+          {
+            "bits": "PATH A",
+            "p": 0.84
+          },
+          {
+            "bits": "PATH B",
+            "p": 0.10400000000000002
+          },
+          {
+            "bits": "PATH C",
+            "p": 0.05600000000000001
+          }
+        ],
+        "expected": "PATH A",
+        "headline": "Evidence fit",
+        "idealP": 0.95,
+        "measuredP": 0.64,
+        "note": "The funding relationship is supported. Common ownership is not established. Next: Can the common route be explained by a shared funding service?",
+        "metrics": [
+          {
+            "label": "Funding sequence",
+            "measured": 0.64,
+            "ideal": 0.95
+          },
+          {
+            "label": "Instruction consistency",
+            "measured": 0.55,
+            "ideal": 0.95
+          },
+          {
+            "label": "Independent support",
+            "measured": 0.46,
+            "ideal": 0.9
+          }
+        ]
+      },
+      {
+        "id": "bb-reconstruction-002",
+        "backend": "echo_matrix",
+        "agent": "qubit",
+        "missionId": "mirror-route",
+        "title": "MIRROR / retry-path reconstruction",
+        "qubits": 6,
+        "layout": [
+          41,
+          42,
+          43,
+          56,
+          63,
+          64
+        ],
+        "depth": 192,
+        "twoQubitGates": 24,
+        "shots": 2048,
+        "status": "done",
+        "quantumSec": 16,
+        "submittedAt": 1791808320000,
+        "finishedAt": 1791808332000,
+        "top": [
+          {
+            "bits": "PATH A",
+            "p": 0.79
+          },
+          {
+            "bits": "PATH B",
+            "p": 0.13649999999999998
+          },
+          {
+            "bits": "PATH C",
+            "p": 0.07349999999999998
+          }
+        ],
+        "expected": "PATH A",
+        "headline": "Evidence fit",
+        "idealP": 0.95,
+        "measuredP": 0.79,
+        "note": "A retry loop currently fits the instruction sequence best. Intent is unresolved. Next: Does the retry condition reproduce the repeated path without extra assumptions?",
+        "metrics": [
+          {
+            "label": "Funding sequence",
+            "measured": 0.79,
+            "ideal": 0.95
+          },
+          {
+            "label": "Instruction consistency",
+            "measured": 0.7,
+            "ideal": 0.95
+          },
+          {
+            "label": "Independent support",
+            "measured": 0.61,
+            "ideal": 0.9
+          }
+        ]
+      },
+      {
+        "id": "bb-reconstruction-003",
+        "backend": "echo_matrix",
+        "agent": "qubit",
+        "missionId": "silent-vault",
+        "title": "VAULT / unresolved branch search",
+        "qubits": 5,
+        "layout": [
+          20,
+          21,
+          22,
+          36,
+          41
+        ],
+        "depth": 256,
+        "twoQubitGates": 24,
+        "shots": 2048,
+        "status": "done",
+        "quantumSec": 20,
+        "submittedAt": 1791808080000,
+        "finishedAt": 1791808092000,
+        "top": [
+          {
+            "bits": "PATH A",
+            "p": 0.62
+          },
+          {
+            "bits": "PATH B",
+            "p": 0.24700000000000003
+          },
+          {
+            "bits": "PATH C",
+            "p": 0.13299999999999998
+          }
+        ],
+        "expected": "PATH A",
+        "headline": "Evidence fit",
+        "idealP": 0.95,
+        "measuredP": 0.62,
+        "note": "Two branches have case links. The third remains outside the attributed cluster. Next: Can the third branch be connected through evidence independent of timing?",
+        "metrics": [
+          {
+            "label": "Funding sequence",
+            "measured": 0.62,
+            "ideal": 0.95
+          },
+          {
+            "label": "Instruction consistency",
+            "measured": 0.53,
+            "ideal": 0.95
+          },
+          {
+            "label": "Independent support",
+            "measured": 0.44,
+            "ideal": 0.9
+          }
+        ]
+      }
+    ],
+    "jobsTotal": 3,
+    "secTotal": 48
+  },
+  "dossiers": [
+    {
+      "id": "echo-launch",
+      "code": "BB-001",
+      "severity": "Elevated",
+      "confidence": 64,
+      "scope": "23 wallet aliases \u00b7 8-second entry window",
+      "assessment": "The funding relationship is supported. Common ownership is not established.",
+      "nextQuestion": "Can the common route be explained by a shared funding service?",
+      "timeline": [
+        [
+          "T\u221218m",
+          "A funding route appears",
+          "One intermediate route supplies 17 aliases before the launch window.",
+          "cartographer"
+        ],
+        [
+          "T+00s",
+          "The launch opens",
+          "The first entry establishes the reference point for the timing ledger.",
+          "sentinel"
+        ],
+        [
+          "T+08s",
+          "Twenty-three aliases enter",
+          "A narrow interval links the entries in time, not necessarily in ownership.",
+          "sentinel"
+        ],
+        [
+          "T+11m",
+          "The cluster is challenged",
+          "Service overlap remains a plausible explanation for the funding relationship.",
+          "adversary"
+        ]
+      ],
+      "evidence": [
+        [
+          "Funding overlap",
+          "Supported",
+          "Seventeen aliases share one intermediate route."
+        ],
+        [
+          "Entry timing",
+          "Supported",
+          "All 23 entries fall inside the same eight-second interval."
+        ],
+        [
+          "Independent aliases",
+          "Unresolved",
+          "Six aliases have no supported connection to the shared route."
+        ]
+      ],
+      "hypotheses": [
+        [
+          "Coordinated launch",
+          "Working explanation",
+          "Explains funding overlap and timing, but needs independent evidence of common control.",
+          64
+        ],
+        [
+          "Shared funding service",
+          "Still plausible",
+          "Explains the common route without requiring a single owner.",
+          58
+        ],
+        [
+          "Timing coincidence",
+          "Weaker fit",
+          "Does not explain the earlier funding overlap on its own.",
+          24
+        ]
+      ],
+      "graph": [
+        "Funding source",
+        "Intermediate route",
+        "Cluster \u00b7 17",
+        "Other aliases \u00b7 6",
+        "Launch pool",
+        "Unresolved owner"
+      ],
+      "impact": "A coordinated entry could distort the apparent distribution of a launch.",
+      "graphEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "unknownNode": 5,
+      "graphNotes": [
+        "One intermediate route supplies 17 aliases before the launch window.",
+        "Seventeen aliases share one intermediate route.",
+        "All 23 entries fall inside the same eight-second interval.",
+        "A narrow interval links the entries in time, not necessarily in ownership.",
+        "Six aliases have no supported connection to the shared route.",
+        "No independent ownership claim is attached to this node."
+      ],
+      "reconstruction": {
+        "question": "Can the common route be explained by a shared funding service?",
+        "result": "Coordinated launch is the current working explanation.",
+        "confidenceBefore": 48,
+        "confidenceAfter": 64,
+        "caveat": "Independent evidence is still required before attributing control or intent."
+      }
+    },
+    {
+      "id": "exit-window",
+      "code": "BB-002",
+      "severity": "High",
+      "confidence": 72,
+      "scope": "2 withdrawals \u00b7 1 sell window",
+      "assessment": "Withdrawal order is supported. The motive behind the exit remains open.",
+      "nextQuestion": "Do authority changes show a planned exit or an automated trigger?",
+      "timeline": [
+        [
+          "T\u221204m",
+          "Authority snapshot captured",
+          "The case records the configuration before liquidity changes.",
+          "forge"
+        ],
+        [
+          "T+00s",
+          "First withdrawal",
+          "The first withdrawal establishes the start of the exit interval.",
+          "cryptanalyst"
+        ],
+        [
+          "T+42s",
+          "Second withdrawal",
+          "A second path removes liquidity before the wider sell wave.",
+          "cryptanalyst"
+        ],
+        [
+          "T+03m",
+          "The sell window expands",
+          "The broader selling starts after the two recorded withdrawals.",
+          "prover"
+        ]
+      ],
+      "evidence": [
+        [
+          "Withdrawal sequence",
+          "Supported",
+          "Two paths precede the broader selling interval."
+        ],
+        [
+          "Authority history",
+          "Requested",
+          "The sequence of control changes is needed to distinguish the explanations."
+        ],
+        [
+          "Intent",
+          "Unresolved",
+          "Price movement and timing cannot establish motive."
+        ]
+      ],
+      "hypotheses": [
+        [
+          "Pre-positioned exit",
+          "Working explanation",
+          "Fits the ordering but still requires evidence of a deliberate instruction.",
+          72
+        ],
+        [
+          "Automation trigger",
+          "Still plausible",
+          "Could produce the same order if a threshold rule fired first.",
+          61
+        ],
+        [
+          "Reactive withdrawal",
+          "Weaker fit",
+          "Would require a prior sell signal outside the recorded window.",
+          31
+        ]
+      ],
+      "graph": [
+        "Authority record",
+        "Liquidity account",
+        "Withdrawal A",
+        "Withdrawal B",
+        "Sell window",
+        "Trigger unknown"
+      ],
+      "impact": "Early liquidity removal can change the exit conditions for later participants.",
+      "graphEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "unknownNode": 5,
+      "graphNotes": [
+        "The case records the configuration before liquidity changes.",
+        "Two paths precede the broader selling interval.",
+        "The sequence of control changes is needed to distinguish the explanations.",
+        "A second path removes liquidity before the wider sell wave.",
+        "Price movement and timing cannot establish motive.",
+        "No independent ownership claim is attached to this node."
+      ],
+      "reconstruction": {
+        "question": "Do authority changes show a planned exit or an automated trigger?",
+        "result": "Pre-positioned exit is the current working explanation.",
+        "confidenceBefore": 56,
+        "confidenceAfter": 72,
+        "caveat": "Independent evidence is still required before attributing control or intent."
+      }
+    },
+    {
+      "id": "mirror-route",
+      "code": "BB-003",
+      "severity": "Moderate",
+      "confidence": 79,
+      "scope": "3 explanations \u00b7 repeated route fingerprint",
+      "assessment": "A retry loop currently fits the instruction sequence best. Intent is unresolved.",
+      "nextQuestion": "Does the retry condition reproduce the repeated path without extra assumptions?",
+      "timeline": [
+        [
+          "T+00s",
+          "Route fingerprint captured",
+          "The same sequence of instructions becomes the comparison baseline.",
+          "forge"
+        ],
+        [
+          "T+12s",
+          "The fingerprint repeats",
+          "Matching boundaries suggest a repeated execution path.",
+          "sentinel"
+        ],
+        [
+          "T+02m",
+          "Three paths are reconstructed",
+          "The lab compares retry, aggregation, and intentional repetition.",
+          "qubit"
+        ],
+        [
+          "T+06m",
+          "Attribution is narrowed",
+          "The case records a retry-shaped pattern rather than claiming manipulation.",
+          "adversary"
+        ]
+      ],
+      "evidence": [
+        [
+          "Instruction fingerprint",
+          "Supported",
+          "Repeated route records share the same execution boundary."
+        ],
+        [
+          "Retry condition",
+          "Working lead",
+          "The loop explanation depends on the trigger reproducing the path."
+        ],
+        [
+          "Deliberate volume",
+          "Unresolved",
+          "Repeated execution alone does not establish an intent to inflate volume."
+        ]
+      ],
+      "hypotheses": [
+        [
+          "Bot retry loop",
+          "Working explanation",
+          "Explains repetition and the shared boundary with the fewest assumptions.",
+          79
+        ],
+        [
+          "Route aggregation",
+          "Still plausible",
+          "Could repeat part of the route while serving independent requests.",
+          52
+        ],
+        [
+          "Intentional repetition",
+          "Unresolved",
+          "Needs evidence beyond the instruction pattern.",
+          37
+        ]
+      ],
+      "graph": [
+        "Execution policy",
+        "Route fingerprint",
+        "Retry boundary",
+        "Repeated path",
+        "Route output",
+        "Intent unknown"
+      ],
+      "impact": "A repeated path can make activity appear more diverse than its underlying execution.",
+      "graphEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "unknownNode": 5,
+      "graphNotes": [
+        "The same sequence of instructions becomes the comparison baseline.",
+        "Repeated route records share the same execution boundary.",
+        "The loop explanation depends on the trigger reproducing the path.",
+        "The lab compares retry, aggregation, and intentional repetition.",
+        "Repeated execution alone does not establish an intent to inflate volume.",
+        "No independent ownership claim is attached to this node."
+      ],
+      "reconstruction": {
+        "question": "Does the retry condition reproduce the repeated path without extra assumptions?",
+        "result": "Bot retry loop is the current working explanation.",
+        "confidenceBefore": 63,
+        "confidenceAfter": 79,
+        "caveat": "Independent evidence is still required before attributing control or intent."
+      }
+    },
+    {
+      "id": "silent-vault",
+      "code": "BB-004",
+      "severity": "Elevated",
+      "confidence": 62,
+      "scope": "3 funding branches \u00b7 1 unresolved path",
+      "assessment": "Two branches have case links. The third remains outside the attributed cluster.",
+      "nextQuestion": "Can the third branch be connected through evidence independent of timing?",
+      "timeline": [
+        [
+          "T+00s",
+          "Intermediate account identified",
+          "The graph anchors on the account where the trail splits.",
+          "cartographer"
+        ],
+        [
+          "T+03m",
+          "Three branches separate",
+          "The outgoing paths are recorded independently.",
+          "cartographer"
+        ],
+        [
+          "T+07m",
+          "Two paths return to known aliases",
+          "Those branches are linked back to the case ledger.",
+          "prover"
+        ],
+        [
+          "T+12m",
+          "The unknown branch is isolated",
+          "The third branch becomes an evidence request instead of an assumed connection.",
+          "architect"
+        ]
+      ],
+      "evidence": [
+        [
+          "Branch split",
+          "Supported",
+          "The intermediate account sends the trail into three distinct paths."
+        ],
+        [
+          "Return paths",
+          "Supported",
+          "Two branches connect to known aliases in the case record."
+        ],
+        [
+          "Third branch owner",
+          "Unresolved",
+          "No independent ownership connection is attached to the remaining path."
+        ]
+      ],
+      "hypotheses": [
+        [
+          "Common routing infrastructure",
+          "Working explanation",
+          "Explains the intermediate hop without merging every branch into one owner.",
+          62
+        ],
+        [
+          "Controlled fan-out",
+          "Still plausible",
+          "Would require a separate control link for the unresolved branch.",
+          49
+        ],
+        [
+          "Independent recipient",
+          "Still plausible",
+          "Fits the lack of an established link on the third branch.",
+          57
+        ]
+      ],
+      "graph": [
+        "Origin alias",
+        "Intermediate account",
+        "Branch A",
+        "Branch B",
+        "Branch C \u00b7 unknown",
+        "Known case aliases"
+      ],
+      "impact": "An unsupported cluster merge would overstate who controls the outgoing funds.",
+      "graphEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "unknownNode": 4,
+      "graphNotes": [
+        "The graph anchors on the account where the trail splits.",
+        "The intermediate account sends the trail into three distinct paths.",
+        "Two branches connect to known aliases in the case record.",
+        "Those branches are linked back to the case ledger.",
+        "No independent ownership connection is attached to the remaining path.",
+        "Two recorded branches return to the aliases already linked in this case."
+      ],
+      "reconstruction": {
+        "question": "Can the third branch be connected through evidence independent of timing?",
+        "result": "Common routing infrastructure is the current working explanation.",
+        "confidenceBefore": 46,
+        "confidenceAfter": 62,
+        "caveat": "Independent evidence is still required before attributing control or intent."
+      }
+    },
+    {
+      "id": "ghost-signal",
+      "code": "BB-005",
+      "severity": "Moderate",
+      "confidence": 46,
+      "scope": "2 surviving explanations \u00b7 attribution withheld",
+      "assessment": "The early-entry pattern fits both coordination and ordinary arbitrage.",
+      "nextQuestion": "Does the signal remain unusual when public arbitrage conditions are included?",
+      "timeline": [
+        [
+          "T\u221202m",
+          "Public signal appears",
+          "The ledger records the signal available before the earliest entries.",
+          "sentinel"
+        ],
+        [
+          "T+00s",
+          "Early entries begin",
+          "The timing becomes the starting point for the insider hypothesis.",
+          "cryptanalyst"
+        ],
+        [
+          "T+04m",
+          "Arbitrage is tested",
+          "A public response could explain the same entry order.",
+          "adversary"
+        ],
+        [
+          "T+09m",
+          "Ownership inference is withheld",
+          "Neither surviving explanation has enough independent support for attribution.",
+          "prover"
+        ]
+      ],
+      "evidence": [
+        [
+          "Early entry order",
+          "Supported",
+          "A subset of aliases enters before the wider window."
+        ],
+        [
+          "Public information",
+          "Supported",
+          "An observable signal exists before the first recorded entries."
+        ],
+        [
+          "Private coordination",
+          "Unresolved",
+          "No independent evidence separates insider knowledge from public response."
+        ]
+      ],
+      "hypotheses": [
+        [
+          "Public arbitrage response",
+          "Working explanation",
+          "Explains early timing without requiring private information.",
+          61
+        ],
+        [
+          "Private coordination",
+          "Still plausible",
+          "Needs an independent communication or control connection.",
+          46
+        ],
+        [
+          "Random entry order",
+          "Weaker fit",
+          "Does not explain the alignment with the public signal.",
+          22
+        ]
+      ],
+      "graph": [
+        "Public signal",
+        "Early alias A",
+        "Early alias B",
+        "Entry window",
+        "Pool response",
+        "Private link unknown"
+      ],
+      "impact": "Misreading public timing as insider knowledge could produce an unsupported accusation.",
+      "graphEdges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "unknownNode": 5,
+      "graphNotes": [
+        "The ledger records the signal available before the earliest entries.",
+        "A subset of aliases enters before the wider window.",
+        "An observable signal exists before the first recorded entries.",
+        "A public response could explain the same entry order.",
+        "No independent evidence separates insider knowledge from public response.",
+        "No independent ownership claim is attached to this node."
+      ],
+      "reconstruction": {
+        "question": "Does the signal remain unusual when public arbitrage conditions are included?",
+        "result": "Public arbitrage response is the current working explanation.",
+        "confidenceBefore": 30,
+        "confidenceAfter": 46,
+        "caveat": "Independent evidence is still required before attributing control or intent."
+      }
+    },
+    {
+      "id": "last-mile",
+      "code": "BB-006",
+      "severity": "High",
+      "confidence": 58,
+      "scope": "Authority history \u00b7 execution policy",
+      "assessment": "The case cannot distinguish a deliberate exit from failed automation yet.",
+      "nextQuestion": "Which authority change, if any, preceded the final execution trigger?",
+      "timeline": [
+        [
+          "T\u221206m",
+          "Policy baseline recorded",
+          "The case preserves the expected automation behavior.",
+          "architect"
+        ],
+        [
+          "T+00s",
+          "Unexpected exit path",
+          "The observed sequence departs from the expected policy.",
+          "forge"
+        ],
+        [
+          "T+05m",
+          "Authority history requested",
+          "Control changes become the next decisive record.",
+          "prover"
+        ],
+        [
+          "T+10m",
+          "Review boundary published",
+          "The bureau records exactly what would distinguish the explanations.",
+          "conductor"
+        ]
+      ],
+      "evidence": [
+        [
+          "Execution departure",
+          "Supported",
+          "The final path differs from the policy baseline in the case record."
+        ],
+        [
+          "Control changes",
+          "Requested",
+          "Authority history is needed to establish who could change the policy."
+        ],
+        [
+          "Trigger origin",
+          "Unresolved",
+          "A deliberate command and a failed trigger remain competing explanations."
+        ]
+      ],
+      "hypotheses": [
+        [
+          "Failed automation",
+          "Working explanation",
+          "Fits the departure if the policy trigger fired incorrectly.",
+          58
+        ],
+        [
+          "Deliberate policy change",
+          "Still plausible",
+          "Requires a preceding authority or configuration change.",
+          53
+        ],
+        [
+          "External route failure",
+          "Weaker fit",
+          "Needs an independent failure record at the route boundary.",
+          33
+        ]
+      ],
+      "graph": [
+        "Policy baseline",
+        "Authority history",
+        "Execution trigger",
+        "Exit path",
+        "Final recipient",
+        "Change unknown"
+      ],
+      "impact": "The same exit path can have different causes and require different responses.",
+      "graphEdges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "unknownNode": 5,
+      "graphNotes": [
+        "The case preserves the expected automation behavior.",
+        "The final path differs from the policy baseline in the case record.",
+        "Authority history is needed to establish who could change the policy.",
+        "Control changes become the next decisive record.",
+        "A deliberate command and a failed trigger remain competing explanations.",
+        "No independent ownership claim is attached to this node."
+      ],
+      "reconstruction": {
+        "question": "Which authority change, if any, preceded the final execution trigger?",
+        "result": "Failed automation is the current working explanation.",
+        "confidenceBefore": 42,
+        "confidenceAfter": 58,
+        "caveat": "Independent evidence is still required before attributing control or intent."
+      }
+    }
+  ]
+}
